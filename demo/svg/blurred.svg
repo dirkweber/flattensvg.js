@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="250px" height="184px" xml:space="preserve">
+	<defs>
+		<filter id="f" x="0" y="0">
+	  		<feGaussianBlur in="SourceGraphic" stdDeviation="8" />
+		</filter>
+		<image id="image" xlink:href="../img/paul.png" x="0" y="0" width="200" height="182" />
+    </defs>
+	<use xlink:href="#image" filter="url(#f)" width="200"  height="182" x="100" y="130" opacity="0.7" transform="scale(0.8 0.8)"/>
+	<use xlink:href="#image" filter="url(#f)" width="200"  height="182" x="100" y="-100" opacity="0.7" transform="scale(0.8 0.8)"/>
+	<use xlink:href="#image" width="200" height="182" x="-50" y="0"/>
+	<use xlink:href="#image" width="200" height="182" x="200" y="0"/>
+</svg>

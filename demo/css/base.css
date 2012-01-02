@@ -1,0 +1,74 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+/*SPRITEBAKER*/
+
+html {
+	height: 100%;
+}
+
+body{
+	background-color: white;
+	color:  black;
+	height: 100%;
+	font: 14px/1.6em Verdana, sans-serif;
+}
+
+body>article {
+	height:  100%;
+}
+
+article>div{
+		display: block;
+		position:  relative;
+		width:  80%;
+		height: 50%;
+		border:  none;
+		margin: 30px auto 10px;
+		-moz-box-shadow:    inset 0 0 30px black;
+		-webkit-box-shadow: inset 0 0 30px black;
+		-ms-box-shadow: inset 0 0 30px black;
+		-o-box-shadow: inset 0 0 30px black;
+		box-shadow: inset 0 0 30px black;
+}
+
+section {
+	width:  80%;
+	margin: 0 auto;
+}
+
+h2{
+	font-size:  16px;
+	background:  #990000;	padding: 2px;
+	margin:  12px 0px;
+	color:  white;
+}
+
+code {
+	font-size: 12px;
+	line-height: 1.4em;
+	margin-left:  8px;
+	display: block;
+ 	white-space:pre-wrap;
+}
+
+pre {
+	whiteSpace:pre;
+}
+#bottomrightPos {
+	background: #990000 url('../svg/bottomright.svg') no-repeat right bottom;
+	}
+
+#rotated {
+	background: #6699cc url('../svg/rotated.svg') -50px -60px;
+	}
+	
+#clipped {
+	background: #996699 url('../svg/clipped.svg');
+	}
+
+#blurred {
+	background: #33CC99 url('../svg/blurred.svg');
+	}

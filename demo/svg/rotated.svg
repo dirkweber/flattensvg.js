@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="160px" height="160px" xml:space="preserve">
+	<defs>
+		<image id="image" xlink:href="../img/ace.png" x="0" y="-1" width="517px" height="331px"/>		
+    </defs>
+	<use xlink:href="#image" width="170" height="160" x="0" y="0" transform="translate(90 -30) scale(0.3 0.3) rotate(45 0 0)"/>
+</svg>

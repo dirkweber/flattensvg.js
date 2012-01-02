@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="560px" height="272px" xml:space="preserve">
+	<style type="text/css">
+		<![CDATA[
+			.mypattern_1{fill:url(#myimg_1);
+			}
+			.mypattern_2{fill:url(#myimg_2);
+			}
+		]]>
+	</style>
+	<defs>
+		<pattern id="base"  patternUnits="objectBoundingBox" patternContentUnits="userSpaceOnUse" width="1" height="1">
+              <image xlink:href="../img/peter.png" x="0" y="0" width="200px" height="182px" />
+		</pattern>
+		<pattern id="myimg_1"  patternUnits="objectBoundingBox" patternContentUnits="userSpaceOnUse" width="1" height="1">
+		      <rect fill="url(#base)" width="200" height="182" x="0" y="0"/>
+		</pattern>
+		<pattern id="myimg_2"  patternUnits="objectBoundingBox" patternContentUnits="userSpaceOnUse" width="1" height="1">
+		      <rect fill="url(#base)" width="200" height="182" x="0" y="-91"/>
+		</pattern>
+    </defs>
+    
+    <rect class="mypattern_1" width="100" height="91" x="0" y="0" transform="matrix(-1 0 0 -1 100 91)"/>
+    <rect class="mypattern_1" width="100" height="91" x="0" y="0" transform="matrix(-1 0 0 1 100 182)"/>
+    <g transform="translate(200 182)">
+    	<rect class="mypattern_2" width="100" height="91" x="0" y="0" transform="matrix(1 0 0 -1 0 91)"/>
+     	<rect class="mypattern_2" width="100" height="91" x="0" y="0" transform="matrix(-1 0 0 -1 200 91)"/>
+    </g>
+	<g transform="translate(200 -91)">
+		<rect class="mypattern_2" width="100" height="91" x="0" y="0" transform="matrix(1 0 0 1 0 91)"/>
+		<rect class="mypattern_2" width="100" height="91" x="0" y="0"  transform="matrix(-1 0 0 1 200 91)"/>
+	</g>
+	<rect class="mypattern_1" width="100" height="91" x="460" y="182"/>		
+	<rect class="mypattern_1" width="100" height="91" x="0" y="91" transform="matrix(1 0 0 -1 460 182)"/>
+	<rect class="mypattern_1" width="200" height="182" x="320" y="50"/>	
+	<rect class="mypattern_1" width="200" height="182" x="40" y="50"/>
+</svg>
