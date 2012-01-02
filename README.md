@@ -12,6 +12,6 @@ The script can be used as a development tool for speeding up loading time as wel
 Iclude it into the head of your page, after the css declarations.
 ## License
 
-flattensvg.js is is licensed under the terms of the MIT License, see the included MIT-LICENSE file.
+flattensvg.js is licensed under the terms of the MIT License, see the included MIT-LICENSE file.
 
 More infos and demos on www.eleqtriq.com
