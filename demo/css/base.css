@@ -53,22 +53,6 @@ code {
 	display: block;
  	white-space:pre-wrap;
 }
-
-pre {
-	whiteSpace:pre;
-}
-#bottomrightPos {
-	background: #990000 url('../svg/bottomright.svg') no-repeat right bottom;
-	}
-
 #rotated {
 	background: #6699cc url('../svg/rotated.svg') -50px -60px;
-	}
-	
-#clipped {
-	background: #996699 url('../svg/clipped.svg');
-	}
-
-#blurred {
-	background: #33CC99 url('../svg/blurred.svg');
-	}
+}

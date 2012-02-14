@@ -93,7 +93,7 @@
 						document.addEventListener(evID, swapPath(prop, paths[j], i, evID, bgAttrib), false);
 						fixSVG(paths[j], evID);
 					}else{
-						createAttrib(prop, paths[j], svgCache[paths[j]], i, evID);
+						createAttrib(prop, paths[j], svgCache[paths[j]], i, evID, bgAttrib);
 					}
 				}
 				
@@ -118,7 +118,8 @@
 							        		placeTextfields(path, _svg);
 							        	}
 							        },10);
-							    })(num, attr, path, svg);							}
+							    })(num, attr, path, svg);
+						}
 					}
 				}
 				
@@ -414,5 +415,5 @@
 		}
 	}
 	
-})();
+})(/*true*/);//remove comments to view fixed SVGs as inline Texts
 

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width">
+
+<title>{eleqtriq} SVG Backgrounds</title>
+		<link rel='stylesheet' type='text/css' href='css/base.css'>
+		<link rel='stylesheet' type='text/css' href='css/bottomright.css'>
+		<script type="text/javascript" src="js/flattensvg.js"></script>
+</head>
+
+<body id="body">
+<article>
+<div id="bottomrightPos">
+</div>
+<section id="csscode">
+<p>It is possible to define "background-position: right bottom" for background images. But not every browser allows to define a right and bottom margin as well. Wrapped into an SVG the width and height of the SVG can help us establish a margin around our bitmap that works in every browser.
+<h2>CSS:</h2>
+<code>
+background: red url('../svg/bottomright.svg') no-repeat right bottom;
+</code>
+</section>
+<section>
+<h2>SVG:</h2>
+<code>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;svg version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; x=&quot;0px&quot; y=&quot;0px&quot; width=&quot;360px&quot; height=&quot;270px&quot; xml:space=&quot;preserve&quot;&gt;
+	&lt;defs&gt;
+		&lt;image id=&quot;image&quot; xlink:href=&quot;../img/gene.png&quot; width=&quot;324&quot; height=&quot;231&quot;/&gt;
+	&lt;/defs&gt;
+	&lt;use xlink:href=&quot;#image&quot;/&gt;
+&lt;/svg&gt;
+</code>
+</section>
+</article>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width">
+
+<title>{eleqtriq} SVG Backgrounds</title>
+		<link rel='stylesheet' type='text/css' href='css/base.css'>
+		<link rel='stylesheet' type='text/css' href='css/clipped.css'>
+		<script type="text/javascript" src="js/flattensvg.js"></script>
+</head>
+
+<body id="body">
+<article>
+<div id="clipped">
+</div>
+<section>
+<p>This example shows how the bitmap has been stored in a pattern, so we can use it multiple times. Now we are able to apply mirroring and clipping.</p> 
+<h2>SVG:</h2>
+<code>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;<br />
+&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; version=&quot;1.1&quot; x=&quot;0px&quot; y=&quot;0px&quot; width=&quot;560px&quot; height=&quot;272px&quot; xml:space=&quot;preserve&quot; xmlns:xml=&quot;http://www.w3.org/XML/1998/namespace&quot;&gt;<br />
+	&lt;style type=&quot;text/css&quot;&gt;<br />
+		&lt;![CDATA[<br />
+			.mypattern_1{fill:url(#myimg_1); }<br />
+			.mypattern_2{fill:url(#myimg_2);}<br />
+			.mypattern_3{fill:url(#myimg_3);}<br />
+		]]&gt;<br />
+	&lt;/style&gt;<br />
+	<br />
+	&lt;defs&gt;<br />
+		&lt;pattern id=&quot;base&quot; patternUnits=&quot;objectBoundingBox&quot; patternContentUnits=&quot;objectBoundingBox&quot; width=&quot;1&quot; height=&quot;1&quot;&gt;<br />
+			&lt;image xlink:href=&quot;../img/peter.png&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;1&quot; height=&quot;1&quot;/&gt;<br />
+		&lt;/pattern&gt;<br />
+		&lt;pattern id=&quot;myimg_1&quot; patternUnits=&quot;objectBoundingBox&quot; patternContentUnits=&quot;objectBoundingBox&quot; width=&quot;1&quot; height=&quot;1&quot;&gt;<br />
+			&lt;rect fill=&quot;url(#base)&quot; width=&quot;1&quot; height=&quot;1&quot; x=&quot;0&quot; y=&quot;0&quot;/&gt;<br />
+		&lt;/pattern&gt;<br />
+		&lt;pattern id=&quot;myimg_2&quot; patternUnits=&quot;objectBoundingBox&quot; patternContentUnits=&quot;userSpaceOnUse&quot; width=&quot;1&quot; height=&quot;1&quot;&gt;<br />
+			&lt;rect fill=&quot;url(#base)&quot; width=&quot;200&quot; height=&quot;182&quot; x=&quot;0&quot; y=&quot;-91&quot;/&gt;<br />
+		&lt;/pattern&gt;<br />
+		<br />
+		&lt;pattern id=&quot;myimg_3&quot; patternUnits=&quot;objectBoundingBox&quot; patternContentUnits=&quot;objectBoundingBox&quot; width=&quot;1&quot; height=&quot;1&quot;&gt;<br />
+			&lt;rect fill=&quot;url(#base)&quot; width=&quot;2&quot; height=&quot;2&quot; x=&quot;0&quot; y=&quot;0&quot;/&gt;<br />
+		&lt;/pattern&gt;<br />
+	&lt;/defs&gt;<br />
+<br />
+&lt;rect class=&quot;mypattern_3&quot; width=&quot;100&quot; height=&quot;91&quot; x=&quot;0&quot; y=&quot;0&quot; transform=&quot;matrix(-1 0 0 -1 100 91)&quot;/&gt;<br />
+&lt;rect class=&quot;mypattern_3&quot; width=&quot;100&quot; height=&quot;91&quot; x=&quot;0&quot; y=&quot;0&quot; transform=&quot;matrix(-1 0 0 1 100 182)&quot;/&gt;<br />
+&lt;g transform=&quot;translate(200 182)&quot;&gt;<br />
+	&lt;rect class=&quot;mypattern_2&quot; width=&quot;100&quot; height=&quot;91&quot; x=&quot;0&quot; y=&quot;0&quot; transform=&quot;matrix(1 0 0 -1 0 91)&quot;/&gt;<br />
+	&lt;rect class=&quot;mypattern_2&quot; width=&quot;100&quot; height=&quot;91&quot; x=&quot;0&quot; y=&quot;0&quot; transform=&quot;matrix(-1 0 0 -1 200 91)&quot;/&gt;<br />
+&lt;/g&gt;<br />
+&lt;g transform=&quot;translate(200 -91)&quot;&gt;<br />
+	&lt;rect class=&quot;mypattern_2&quot; width=&quot;100&quot; height=&quot;91&quot; x=&quot;0&quot; y=&quot;0&quot; transform=&quot;matrix(1 0 0 1 0 91)&quot;/&gt;<br />
+	&lt;rect class=&quot;mypattern_2&quot; width=&quot;100&quot; height=&quot;91&quot; x=&quot;0&quot; y=&quot;0&quot; transform=&quot;matrix(-1 0 0 1 200 91)&quot;/&gt;<br />
+&lt;/g&gt;<br />
+&lt;rect class=&quot;mypattern_3&quot; width=&quot;100&quot; height=&quot;91&quot; x=&quot;460&quot; y=&quot;182&quot;/&gt;<br />
+&lt;rect class=&quot;mypattern_3&quot; width=&quot;100&quot; height=&quot;91&quot; x=&quot;0&quot; y=&quot;91&quot; transform=&quot;matrix(1 0 0 -1 460 182)&quot;/&gt;<br />
+&lt;rect class=&quot;mypattern_1&quot; width=&quot;200&quot; height=&quot;182&quot; x=&quot;320&quot; y=&quot;50&quot;/&gt;<br />
+&lt;rect class=&quot;mypattern_1&quot; width=&quot;200&quot; height=&quot;182&quot; x=&quot;40&quot; y=&quot;50&quot;/&gt;<br />
+&lt;/svg&gt;
+</code>
+</section>
+</article>
+</body>
+</html>
